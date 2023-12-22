@@ -1,0 +1,163 @@
+.Login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+
+
+.form-sec {
+  background-color: #fff;
+  display: block;
+  padding: 4rem;
+  min-width: 30%;
+  border-radius: 0.5rem;
+  text-align: center;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input,
+textarea,
+.form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
+}
+
+input {
+  min-width: 100%;
+}
+
+.input-container input,
+textarea {
+  background-color: #fff;
+  padding: 1.1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  min-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+textarea {
+  height: 20vh;
+}
+
+.submit {
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #1eafed;
+  color: #ffffff;
+  font-size: 0.875rem;
+  cursor: pointer;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.signup-link {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.signup-link a {
+  text-decoration: underline;
+}
+
+#contact-hading {
+  padding-top: 5%;
+  padding-left: 5%;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: normal;
+  font-family: "Lora", Arial, serif;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 935px) {
+  .Contact-information {
+    flex-wrap: wrap;
+  }
+
+  #contact-hading {
+    padding-top: 10%;
+  }
+
+  .Con-info {
+    margin-top: 2%;
+    width: 100%;
+    padding: 2%;
+    height: 30vh;
+  }
+}
+
+@media (max-width: 650px) {
+  #contact-hading {
+    padding-top: 18%;
+  }
+
+  .Con-info {
+    margin-top: 2%;
+    width: 100%;
+    padding: 5%;
+    height: 20vh;
+  }
+}
+
+
+
+/* Loder code  */
+.loader {
+    width: 44.8px;
+
+    height: 44.8px;
+    color: #554cb5;
+    position: absolute;
+ 
+    background: radial-gradient(11.2px, currentColor 94%, #0000);
+  }
+  
+  .loader:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(10.08px at bottom right, #0000 94%, currentColor) top left,
+      radial-gradient(10.08px at bottom left, #0000 94%, currentColor) top right,
+      radial-gradient(10.08px at top right, #0000 94%, currentColor) bottom left,
+      radial-gradient(10.08px at top left, #0000 94%, currentColor) bottom right;
+    background-size: 22.4px 22.4px;
+    background-repeat: no-repeat;
+    animation: loader 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+  }
+  
+  @keyframes loader {
+    33% {
+      inset: -11.2px;
+      transform: rotate(0deg);
+    }
+  
+    66% {
+      inset: -11.2px;
+      transform: rotate(90deg);
+    }
+  
+    100% {
+      inset: 0;
+      transform: rotate(90deg);
+    }
+  }
+  

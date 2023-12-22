@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* Added box-sizing for better layout consistency */
+}
+
+.container {
+
+    position: static;
+    z-index: 1;
+}
+
+
+
+.sidebar {
+    border-right: 1px solid rgba(200, 193, 193, 0.768);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    transition: opacity 0.5s;
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.bars {
+    display: flex;
+    font-size: 25px;
+}
+
+.heading {
+    /* Corrected the typo in the class name */
+    background-image: url("https://storage.googleapis.com/pai-images/ff0c9abc5eea422597a01947572898f5.jpeg");
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 100px;
+    font-size: 5rem;
+    padding-left: 5%;
+    letter-spacing: 1px;
+    text-align: start;
+    font-family: "Abril Fatface";
+}
+
+.footer {
+    margin-top: 10%;
+}
+
+form {
+    padding-left: 5%;
+}
+
+input {
+    font-size: 16px;
+    padding: 5%;
+    border: none;
+}
+
+input:active {
+    border: 1px solid white;
+}
+
+.form-email {
+    width: 90%;
+    padding: 1.5%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid #1eafed;
+}
+
+ul {
+    font-size: 1.3rem;
+    color: rgb(27, 0, 0);
+    font-family: "Poppins", Arial, sans-serif;
+    padding-top: 10%;
+    padding-left: 8%;
+    margin: 0;
+}
+
+li {
+    margin: 0 0 10px 0;
+    padding: 1%;
+    list-style: none;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(1);
+    background-color: #1eafed;
+    visibility: hidden;
+}
+
+ul li a:hover::after,
+ul li a:active::after {
+    visibility: visible;
+}
+
+
+.menubtn {
+    visibility: hidden;
+}
+
+@media (max-width: 991px) {
+    .container {
+        grid-template-columns: auto;
+    }
+
+    .sidebar {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .menubtn {
+        visibility: visible;
+    }
+
+    .sidebar.active {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 810px) {
+    .form-email {
+        width: 80%;
+        padding: 1.5%;
+        margin-top: 3%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        border: 1px solid #1eafed;
+    }
+
+    input {
+        font-size: 15px;
+        padding: 3%;
+        width: 80%;
+        border: none;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.btnadmin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: rgb(255, 255, 255);
+    background-color: #0a5d95;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 10px 20px 10px 10px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+.btnadmin:hover {
+    color: white;
+    background-color: #0a5d95;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+.btnadmin:active {
+    box-shadow: none;
+}
+
+
+@media (max-width: 991px) {
+    .container {
+        grid-template-columns: auto;
+    }
+
+    .sidebar {
+        width: 0;
+        visibility: hidden;
+    }
+
+
+
+    .sidebar.active {
+        width: 100%;
+        visibility: visible;
+    }
+}
