@@ -15,10 +15,7 @@ function App() {
           <Route path="/Posts" Component={Posts} />
           <Route path="/NewPosts" Component={NewPosts} />
           <Route path="/UpdatePost" Component={UpdatePost} />
-          {/* <Route path="/AdminLogin" Component={AdminLogin} />
-          <Route path="/CreatePosts" Component={CreatePosts} />
-          <Route path="/Postdetails" Component={Postdetails} />
-          <Route path="/AllPosts" Component={Posts} /> */}
+       
         </Routes>
       </BrowserRouter>
     </>
