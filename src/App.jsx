@@ -1,5 +1,4 @@
-import "./App.css";
-import Sidebar from "./Components/Sidebar/Sidebar";
+
 import Login from "./Components/Auth/Login";
 import Posts from "./Components/AllPosts/Posts";
 import NewPosts from "./Components/CreatePosts/NewPosts";
